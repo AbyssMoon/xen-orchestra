@@ -42,7 +42,6 @@
 - @vates/nbd-client minor
 - @vates/types minor
 - @xen-orchestra/acl minor
-- @xen-orchestra/async-map patch
 - @xen-orchestra/backup-archive minor
 - @xen-orchestra/backups minor
 - @xen-orchestra/disk-transform patch
@@ -51,7 +50,6 @@
 - @xen-orchestra/qa-test minor
 - @xen-orchestra/qcow2 patch
 - @xen-orchestra/rest-api minor
-- @xen-orchestra/upload-ova patch
 - @xen-orchestra/vmdk major
 - @xen-orchestra/vmware-explorer minor
 - @xen-orchestra/web minor
@@ -61,9 +59,7 @@
 - xen-api minor
 - xo-acl-resolver minor
 - xo-cli patch
-- xo-common minor
 - xo-server minor
-- xo-server-ipmi-sensors minor
 - xo-server-load-balancer minor
 - xo-server-netbox minor
 - xo-server-sdn-controller patch
