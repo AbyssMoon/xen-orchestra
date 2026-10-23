@@ -6,3 +6,16 @@ export function isNetworkRuleSupported(pool: FrontXoPool | undefined): boolean {
 
   return ofMethod === 'xapi-plugin'
 }
+
+export function getOrdinalSuffix(suffixesMessage: string, locale: string, position: number): string | undefined {
+  const suffixes = new Map<string, string>()
+
+  for (const entry of suffixesMessage.split(',')) {
+    const [category, suffix] = entry.trim().split(':')
+    suffixes.set(category, suffix)
+  }
+
+  const category = new Intl.PluralRules(locale, { type: 'ordinal' }).select(position)
+
+  return suffixes.get(category)
+}

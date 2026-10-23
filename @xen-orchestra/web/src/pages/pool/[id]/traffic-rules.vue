@@ -10,7 +10,7 @@
         </template>
       </TrafficRulesTable>
     </UiCard>
-    <TrafficRulesSidePanel :rule="selectedRule" @close="selectedRule = undefined" />
+    <TrafficRulesSidePanel :rule="selectedRule" :rules="trafficRules" show-priority @close="selectedRule = undefined" />
   </VtsContentSidePanel>
 </template>
 
